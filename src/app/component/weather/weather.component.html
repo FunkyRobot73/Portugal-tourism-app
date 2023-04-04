@@ -1,1 +1,9 @@
-<p>weather works!</p>
+<!-- <app-weather></app-weather> -->
+
+<div class="container">
+    <ul>
+        <li *ngFor="let weather of weatherData" class="removebullet">
+            <a>{{ weather.name }}</a>
+        </li>
+    </ul>
+</div>

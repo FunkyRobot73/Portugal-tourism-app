@@ -7,4 +7,6 @@ let citiesWeather = [
     {name:"Corvo", springN:23, springM:40, summerN:28, summerM:43, winterN:12, winterM:25, autumnN:22, autumnM:36, visitFrom:"January", visitTo:"December"}
 ]
 
+
+
 export { citiesWeather };

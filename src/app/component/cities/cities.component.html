@@ -1,5 +1,37 @@
 <div class="container">
-    <div class="container" *ngFor="let city of cities" >
-        <a>{{city.name}}</a>
-    </div>
+    
+
+
+<table class="blueTable">
+    <thead>
+        <tr>
+            <th *ngFor="let city of cities">{{city.name}}</th>
+
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+                <div class="links"><a href="#">&laquo;</a> <a class="active"
+                        href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a
+                        href="#">4</a> <a href="#">&raquo;</a></div>
+            </td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td *ngFor="let city of cities">{{city.attractionSites[0]}}</td>
+        </tr>
+        <tr>
+            <td *ngFor="let city of cities">{{city.attractionSites[1]}}</td>
+        </tr>
+        <tr>
+            <td *ngFor="let city of cities">{{city.attractionSites[2]}}</td>
+        </tr>
+        <tr>
+            <td *ngFor="let city of cities">{{city.attractionSites[3]}}</td>
+        </tr>
+    </tbody>
+</table>
+
 </div>
