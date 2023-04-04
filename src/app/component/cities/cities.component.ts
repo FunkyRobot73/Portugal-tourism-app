@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetcitiesService } from 'src/app/service/getcities.service';
+import { Citiesinfo } from './cities-info-data';
 
 @Component({
   selector: 'app-cities',
