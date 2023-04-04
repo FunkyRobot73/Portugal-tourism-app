@@ -1,0 +1,11 @@
+.footer-class {
+    position: fixed;
+    width: 100%;
+    /* border-top: 100px; */
+    padding-top: 50px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 0; */
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
