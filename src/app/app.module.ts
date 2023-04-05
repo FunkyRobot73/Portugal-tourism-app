@@ -7,6 +7,11 @@ import { HomeComponent } from './component/home/home.component';
 import { CitiesComponent } from './component/cities/cities.component';
 import { WeatherComponent } from './component/weather/weather.component';
 import { WeatherDetailsComponent } from './component/weather-details/weather-details.component';
+import { ImportantTextDirective } from './directive/important-text.directive';
+import { TechIdeasComponent } from './component/tech-ideas/tech-ideas.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,16 @@ import { WeatherDetailsComponent } from './component/weather-details/weather-det
     HomeComponent,
     CitiesComponent,
     WeatherComponent,
-    WeatherDetailsComponent
+    WeatherDetailsComponent,
+    ImportantTextDirective,
+    TechIdeasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
