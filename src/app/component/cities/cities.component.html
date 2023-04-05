@@ -5,7 +5,17 @@
 <table class="blueTable">
     <thead>
         <tr>
-            <th *ngFor="let city of cities">{{city.name}}</th>
+            <th *ngFor="let city of cities"><a [routerLink]="['#']" class="styleCities">
+                {{city.name}}</a>
+            </th>
+                
+            <!-- <a [routerLink]="['/weather', weather.name, weather.springN,
+            weather.springM, weather.summerN, weather.summerM,
+            weather.winterN, weather.winterM, weather.autumnN,
+            weather.autumnM, weather.visitFrom, weather.visitTo]"> -->
+                
+                
+                        
 
         </tr>
     </thead>
@@ -35,3 +45,5 @@
 </table>
 
 </div>
+
+<!-- <app-weather></app-weather> -->

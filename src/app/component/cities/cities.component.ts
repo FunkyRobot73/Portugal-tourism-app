@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GetcitiesService } from 'src/app/service/getcities.service';
 import { Citiesinfo } from './cities-info-data';
+import { GetweatherService } from 'src/app/service/getweather.service';
 
 @Component({
   selector: 'app-cities',
@@ -8,6 +9,8 @@ import { Citiesinfo } from './cities-info-data';
   styleUrls: ['./cities.component.css']
 })
 export class CitiesComponent implements OnInit {
+  weatherData:any;
+  
   cities:any;
   color:any;
   constructor(private _cities: GetcitiesService) { }

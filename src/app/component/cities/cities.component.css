@@ -61,3 +61,13 @@ table.blueTable {
     padding: 2px 8px;
     border-radius: 5px;
   }
+
+  .styleCities {
+    text-decoration: none;
+    color: white;
+  }
+
+  .styleCities:hover {
+    font-weight: bolder;
+    color: white;
+  }
